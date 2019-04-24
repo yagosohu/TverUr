@@ -13,29 +13,76 @@
 </head>
     <body>
         <nav class="menu">
-            <div class="icon">
+            <div class="menu__icon">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
             
             </div>
-            <div class="menu-links">
-                <a href="#" class="links">O nas</a>
-                <a href="#" class="links">Dagi</a>
-                <a href="#" class="links">Owcy</a>
-                <a href="#" class="links">Dagi i ovcy</a>
-                <a href="#" class="links">Dagi i kozy</a>
+            <div class="menu__links">
+                <a href="#" class="menu__links-item">O nas</a>
+                <a href="#" class="menu__links-item">Dagi</a>
+                <a href="#" class="menu__links-item">Owcy</a>
+                <a href="#" class="menu__links-item">Dagi i ovcy</a>
+                <a href="#" class="menu__links-item">Dagi i kozy</a>
             </div>
         </nav>
+        <section class="myslider">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://cs11.pikabu.ru/post_img/2018/08/23/8/1535026971180095935.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block" id="first">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://cdn21.img.ria.ru/images/154960/82/1549608248_0:93:433:337_600x0_80_0_0_27e0eb5c66dad54fb001392a98f8a4b2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://egear.ru/wp-content/uploads/2014/05/Screen-Shot-2014-05-07-at-14.30.20-700x534.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Выращивание козлов</h5>
+                        <p>Наши козлы настолько хороши, что могут довести человека до суицида одним лишь взглядом</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+        </section>
         <script>
             (function($){
                 $(function()
                 {
                     $('.menu').on('click',function()
                     {
-                        $(this).closest('.menu').toggleClass('Menu-open')});
+                        $(this).closest('.menu').toggleClass('menu_state_open');
+                        });
+                    $('.menu__links-item').on('click',function()
+                    {
+                        $(this).closest('.menu').removeClass('menu_state_open');
                     });
+                });       
             })(jQuery);
         </script>
     </body>
