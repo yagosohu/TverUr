@@ -1,42 +1,264 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Хозяйство</title>
-
+    <title>Тверской урожай</title>
+    <link rel="stylesheet" href="parallax.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
     <body>
         <nav class="menu">
-            <div class="icon">
+            <div class="menu__icon">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
             
             </div>
-            <div class="menu-links">
-                <a href="#" class="links">О нас</a>
-                <a href="#" class="links">Продукция</a>
-                <a href="#" class="links">Доставка и оплата</a>
-                <a href="#" class="links">Галерея</a>
-                <a href="#" class="links">Контакты</a>
+            <div class="menu__links">
+                <a href="Onas.html" class="menu__links-item">О нас</a>
+                <a href="products.html" class="menu__links-item">Продукция</a>
+                <a href="delivery.html" class="menu__links-item">Доставка и Оплата</a>
+                <a href="galery.html" class="menu__links-item">Галерея</a>
+                <a href="Contacts.html" class="menu__links-item">Контакты</a>
             </div>
         </nav>
-        <script>
-            (function($){
-                $(function()
-                {
-                    $('.menu').on('click',function()
+        <section class="myslider">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="1.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block" id="first">
+                        <p class="headline">Тверской урожай</p>
+                        <h5>Для тех, кто знает толк в еде</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <p class="headline">Натуральная продукция</p>
+                        <h5>Мы производим качественные и безопасные продукты</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="3.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <p class="headline">С заботой о клиентах</p>
+                        <h5>Органический подход к производству</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+        </section>
+        <div class="container container_top">
+            <h2>Почему именно мы:</h2>
+            <div class="row center syka">
+              <div class="col-md-4 col-xs-12"><i class="fa fa-check-square fa-3x" aria-hidden="true"></i><p>Информация о нас</p></div>
+              <div class="col-md-4 col-xs-12"><i class="fa fa-cutlery fa-3x" aria-hidden="true"></i><p>Информация о нас</p></div>
+              <div class="col-md-4 col-xs-12"><i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i><p>Информация о нас</p></div>
+            </div>
+            <div class="row center syka">
+              <div class="col-md-4 col-xs-12"><i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i><p>Информация о нас</p></div>
+              <div class="col-md-4 col-xs-12"><i class="fa fa-truck fa-3x" aria-hidden="true"></i><p>Информация о нас</p></div>
+              <div class="col-md-4 col-xs-12"><i class="fa fa-beer fa-3x" aria-hidden="true"></i><p>Информация о нас</p></div>
+            </div>
+          </div>
+    <section class="About us">
+      <div class="inner">
+          <div class="jumbotron"
+               style="background: url('6.jpg') no-repeat center; background-size: cover;"
+               data-paroller-factor="0.5"
+               data-paroller-factor-xs="0.2">
+               <div class="container white_block">
+                <div class="row  center">
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 padding-reset">
+                      <h1>О НАС</h1>
+                      <hr>
+                      <p>Практический опыт показывает, что постоянное информационно-техническое обеспечение нашей деятельности позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач! Не следует, однако, забывать о том, что сложившаяся структура организации требует от нас анализа системы обучения кадров, соответствующей насущным потребностям. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности напрямую зависит от соответствующих условий активизации? Значимость этих проблем настолько очевидна, что курс на социально-ориентированный национальный проект позволяет выполнить важнейшие задания по разработке системы обучения кадров, соответствующей насущным потребностям.
+                      </p>
+                      <p></p>
+                      <p></p>
+                    </div>
+                  </DIV>
+          </div>
+      </div>
+  </section>
+  <section class="About us">
+      <div class="inner">
+               <div class="container white_block">
+                <div class="row  center">
+                    <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12 padding-reset">
+                      <h2>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h2>
+                      <hr>
+                      <p>Это второй блок с информацией. Здесь будет удачно смотреться дополнительный текст о вашей деятельности и услугах. Используйте эту возможность, чтобы выгодно представить себя и свою компанию клиентам. Соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности требует от нас системного анализа модели развития. Повседневная практика показывает, что выбранный нами инновационный путь играет важную роль в формировании новых предложений! Равным образом начало повседневной работы по формированию позиции обеспечивает актуальность контента.
+                      </p>
+                      <p></p>
+                      <p></p>
+                    </div>
+                  </DIV>
+      </div>
+  </section>
+  <section class="About us">
+      <div class="inner">
+          <div class="jumbotron"
+               style="background: url('6.jpg') no-repeat center; background-size: cover;"
+               data-paroller-factor="0.5"
+               data-paroller-factor-xs="0.2">
+  <div class="container">
+    <div class="row bot center">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-reset white_block">
+      <h2>Свяжитесь с нами</h2>
+      <hr>
+    <form id="contactForm" action="ддвлвлв.php" method="post">
+      <div class="form-group">
+      <label for="name">Ваше имя:</label>
+      <input id="name" class="form-control" name="name" required type="text" placeholder="Имя">
+      </div>
+      <div class="form-group">
+      <label for="email">Ваш E-mail:</label>
+      <input id="email" class="form-control" name="email" required type="text" placeholder="Почта">
+      </div>
+      <div class="form-group">
+      <label for="phone">Ваш телефон:</label>
+      <input id="phone" class="form-control" name="phone" required type="text" placeholder="Телефон">
+      </div>
+      <div class="form-group">
+      <label for="message">Текст сообщения:</label>
+      <textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+      </div>
+      <button id="button" class="btn btn-dark" type="submit">Отправить</button>
+      <div class="result">
+      <span id="answer"></span>
+      <span id="loader" style="display:none"><img src="images/loader.gif" alt=""></span>
+      </div>
+    </form>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-reset white_text">
+    <h3>НАШИ КОНТАКТЫ</h3>
+    <p>АДРЕС: УЛ. АРБАТ, 3А, МОСКВА, РОССИЯ</p>
+    <p>Контактный телефон: +7 (954)-733-22-87</p>
+    <p>Почтовый адрес: INFO@MYSITE.RU</p>
+  </div>
+</div></div></div>
+</div></section>
+<div class="container container-top">
+  <div class="row center">
+    <a href="#">
+      <h2>НАША ПРОДУКЦИЯ</h2>
+      <hr>
+    </a>
+  </div>
+</div>
+<div id="toTop"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></div>
+<footer class="page-footer font-small blue pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-md-0 mt-3">
+      <h5 class="text-uppercase">Контент в футере</h5>
+      <p>Важная информация о нас</p>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+      <h5 class="text-uppercase">Быстрые ссылки </h5>
+      <ul class="list-unstyled">
+      <li><a href="#!">Ссылка  1</a></li>
+      <li><a href="#!">Ссылка  2</a></li>
+      <li><a href="#!">Ссылка  3</a></li>
+      <li><a href="#!">Ссылка  4</a></li>
+      </ul>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Контакты </h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Контактная информация  1</a></li>
+            <li><a href="#!">Контактная информация  2</a></li>
+            <li><a href="#!">Контактная информация  3</a></li>
+            <li><a href="#!">Контактная информация  4</a></li>
+          </ul>
+      </div>
+      </div>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="#"> All Rights Reserved</a>
+  </div>
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+<script type="text/javascript">
+ 
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+ 
+</script>
+              <script>
+                (function($){
+                    $(function()
                     {
-                        $(this).closest('.menu').toggleClass('Menu-open')});
+                        $('.menu').on('click',function()
+                        {
+                            $(this).closest('.menu').toggleClass('menu_state_open');
+                            });
+                        $('.menu__links-item').on('click',function()
+                        {
+                            $(this).closest('.menu').removeClass('menu_state_open');
+                        });
+                    });       
+                })(jQuery);
+            </script>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+            <script src="jquery.paroller.js"></script>
+            <script>
+                $(document)
+                    .ready(function () {
+                        $('[data-paroller-factor]').paroller();
+                        $('.paroller-example').paroller({
+                            factorXs: 0.1,
+                            factorSm: 0.1,
+                            factorMd: -0.4,
+                            factorLg: -0.5,
+                            factorXl: -0.6,
+                            factor: -0.4,
+                            type: 'foreground',
+                            direction: 'horizontal'
+                        });
                     });
-            })(jQuery);
-        </script>
+              </script>
     </body>
 </html>

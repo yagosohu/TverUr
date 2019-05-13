@@ -1,0 +1,6 @@
+.jumbotron{background:hsla(0,0%,100%,.05);padding:2.5em;margin:2em auto;min-height:400px}
+.paroller-img{max-width:33%;height:auto}
+.popover{background:#000285;display:none;border-radius:.25em;font-family:Courier New,monospace;font-size:.9em;margin:0 .25em .5em;padding:1em;position:relative;z-index:5}
+.popover .popover-inner{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:justify;justify-content:space-between}
+.popover .popover-inner>div{width:50%;padding:0 1em}
+@media screen and (max-width:736px){.popover .popover-inner>div{width:100%}}
